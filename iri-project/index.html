@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="wrapper">
+            <!--шапка-->
+                <header>
+                    <div class="logo-img">
+                        <a href="">
+                            <div class="logo">
+                                <span>Помогатор</span>
+                            </div>
+                        </a>
+
+                    </div>
+                    <nav>
+                        <a href="#" class="menu-btn" onclick="toggleMenu()">
+                            <span></span>
+                        </a>
+                        <ul class="menu-nav">
+                            <li><a href="">Об операторе</a></li>
+                            <li><a href="">Документация</a></li>
+                            <li><a href="">Новости</a></li>
+                            <li><a href="">Для рекламных площадок</a></li>
+                            <li>
+                                <div class="login-block">
+                                    <div class="entry-overlay">
+                                        <input type="text" placeholder="Логин" style="margin-right:23px;">                        
+                                        <input type="text" placeholder="Пароль">
+                                    </div>
+                                    
+                                    <div class="login-button">                        
+                                        <button>Войти</button>
+                                        <div>
+                                            <a href="">Регистрация</a>
+                                            <a href="">Забыли пароль?</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="btn-login">Войти</button>
+                    </nav>
+                </header>
+            <!--информационный контейнер по центру-->          
+            <div class="container">
+                <div class="infoblock-center">
+                    <div class="info-items">
+                        <p class="info-text">Более <span class="info-number">300 млн</span> показов социальной рекламы
+                            за последние 3 месяца</p>
+                    </div>
+                </div>
+                <!--информационный контейнер правый блок-->
+                <div class="infoblock-right">
+                    <div class="info-action">
+                        <h3 class="h3-main">Получите <br> бесплатное размещение вашей социальной рекламы в Интернете
+                        </h3>
+                        <p>Подайте заявку на размещение по одной из заданных <span class="info-subject">тематик</span></p>
+                        
+                        <div class="case-bar">
+                            <span class="term-request">Срок подачи заявки:</span>
+                            <div class="wrap-progressbar">
+                                <div class="tooltip">
+                                    <p>Осталось<span>8</span>дней</p>
+                                </div>
+                                <div class="progressbar">
+                                    <span>1 июня</span>
+                                    <div class="circle-mint"></div>
+                                    <progress id="user-progress" value="40" max="100"></progress>
+                                    <div class="circle-lilac"></div>
+                                    <span>18 июня</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-apply">
+                            <button class="button-apply">Подать заявку</button>
+                            <a class="small-text-button" href="">Подробнее о работе с Оператором</a>
+                        </div>
+                    </div>
+                </div>
+                <!--проверка организации на соответсвие-->
+                <div class="organizacion-check">
+                    <form action="#" method="POST" class="checkin">
+                        <p>Проверьте вашу организацию на соответствие<span class="info-subject">требованиям
+                                конкурса</span></p>
+                        <div class="wrap-check">
+                            <input class="input-chek" type="text" placeholder="Укажите ИНН или ОГРН (ОГРНИП)">
+                            <a href="">
+                                <div class="gotocheck"></div>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+                <!--слайдер с шагами-->
+                <div class="wrap-slider">
+                    <h2 class="h2-main">Как получить<br> льготное размещение?</h2>
+                    <div class="slider">
+                        <div class="item-slick">
+                            <div class="container-item">
+                                <img src="img-slider/shutterstock_1786700081 -01 1.png" alt="">
+                                <div class="step-description">
+                                    <p class="questionary">Заполните анкету организации</p>
+                                    <div class="block-apply">
+                                        <button class="button-apply">Подать заявку</button>
+                                        <a class="small-text-button" href="">Подробнее о работе с Оператором</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-slick">
+                            <div class="container-item">
+                                <img src="img-slider/shutterstock_1795304932-02 1.png" alt="">
+                                <div class="step-description">
+                                    <p class="questionary">Заполните анкету организации</p>
+                                    <div class="block-apply">
+                                        <button class="button-apply">Подать заявку</button>
+                                        <a class="small-text-button" href="">Подробнее о работе с Оператором</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-slick">
+                            <div class="container-item">
+                                <img src="img-slider/shutterstock_1799697361-03 1.png" alt="">
+                                <div class="step-description">
+                                    <p class="questionary">Заполните анкету организации</p>
+                                    <div class="block-apply">
+                                        <button class="button-apply">Подать заявку</button>
+                                        <a class="small-text-button" href="">Подробнее о работе с Оператором</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-slick">
+                            <div class="container-item">
+                                <img src="img-slider/shutterstock_1913068612-04 1.png" alt="">
+                                <div class="step-description">
+                                    <p class="questionary">Заполните анкету организации</p>
+                                    <div class="block-apply">
+                                        <button class="button-apply">Подать заявку</button>
+                                        <a class="small-text-button" href="">Подробнее о работе с Оператором</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-slick">
+                            <div class="container-item">
+                                <img src="img-slider/shutterstock_1853790529-05 1.png" alt="">
+                                <div class="step-description">
+                                    <p class="questionary">Заполните анкету организации</p>
+                                    <div class="block-apply">
+                                        <button class="button-apply">Подать заявку</button>
+                                        <a class="small-text-button" href="">Подробнее о работе с Оператором</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-slick">
+                            <div class="container-item">
+                                <img src="img-slider/shutterstock_1398450485-06 1.png" alt="">
+                                <div class="step-description">
+                                    <p class="questionary">Заполните <br>анкету организации</p>
+                                    <div class="block-apply">
+                                        <button class="button-apply">Подать заявку</button>
+                                        <a class="small-text-button" href="">Подробнее о работе с Оператором</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-slick">
+                            <div class="container-item">
+                                <img src="img-slider/shutterstock_1913068786-final 1.png" alt="">
+                                <div class="step-description">
+                                    <p class="questionary">Заполните анкету организации</p>
+                                    <div class="block-apply">
+                                        <button class="button-apply">Подать заявку</button>
+                                        <a class="small-text-button" href="">Подробнее о работе с Оператором</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--преимущества-->
+            <div class="container">
+                <!--информационный контейнер по центру-->
+                <div class="infoblock-center">
+                    <div class="info-items">
+                        <p class="info-text">Принимаются заявки по <a href="" class="info-link"><span class="info-number">14</span></a> <a href="" class="info-link">тематикам</a></p>
+                    </div>
+                </div>
+                <section class="advantages">
+                    <h2 class="h2-main">Преимущества размещения<br>через Оператора</h2>
+                    <div class="advantages-list">
+                        <div class="advant-items">
+                            <img src="img/icon1.png" alt="">
+                            <h2 class="advantage">Оценка</h2>
+                            <p>Проведем оценку ваших рекламных материалов</p>
+                        </div>
+                        <div class="advant-items">
+                            <img src="img/icon2.png" alt="">
+                            <h2 class="advantage">Медиаплан</h2>
+                            <p>Разработаем медиаплан размещения, наиболее подходящий под тематику и задачи кампании. Подберем необходимые форматы размещения.</p>
+                        </div>
+                        <div class="advant-items">
+                            <img src="img/icon3.png" alt="">
+                            <h2 class="advantage">Коррекция</h2>
+                            <p>Скорректируем рекламную кампанию в течении размещения для повышения её эффективности</p>
+                        </div>
+                        <div class="advant-items" id="ad">
+                            <img src="img/icon4.png" alt="">
+                            <div>
+                                <p>Вашу рекламу увидят</p>
+                                <span>5-150 млн раз</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-apply">
+                        <div class="block-apply">
+                            <button class="button-apply">Подать заявку</button>
+                            <a class="small-text-button" href="">Подробнее о работе с Оператором</a>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+        <!--слайдер партнеров-->
+        <div class="partners">
+            <div class="container">
+                <h3 class="h3-partners">Партнеры</h3>
+                <div class="wrapper-partners">
+                    <div class="slider-partners">
+                        <div class="partner-item"><img src="img-partners/audi.svg" alt=""></div>
+                        <div class="partner-item"><img src="img-partners/beeline.svg" alt=""></div>
+                        <div class="partner-item"><img src="img-partners/exxonmobil.svg" alt=""></div>
+                        <div class="partner-item"><img src="img-partners/visa.svg" alt=""></div>
+                        <div class="partner-item"><img src="img-partners/audi.svg" alt=""></div>
+                        <div class="partner-item"><img src="img-partners/visa.svg" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Подвал-->
+        <footer>
+            <div class="container">
+                <div class="wrap-footer">
+                    <div class="copyright">2021 © ИРИ Оператор</div>
+                    <ul class="list-nav">
+                        <li><a href="">Пользовательское соглашение</a></li>
+                        <li><a href="">Обратная связь</a></li>
+                        <li><a href="">Вопросы-ответы</a></li>
+                        <li><a href="">На сайт ИРИ</a></li>
+                    </ul>
+                    <div class="socials">
+                        <ul class="icon-item">
+                            <li><a href=""><img src="img/vk.svg" alt=""></a></li>
+                            <li><a href=""><img src="img/inst.svg" alt=""></a></li>
+                            <li><a href=""><img src="img/yuotube.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="sliderAdvantagesMob.js" defer></script>
+</body>
+
+</html>
